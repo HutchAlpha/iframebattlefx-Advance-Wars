@@ -1,18 +1,22 @@
-<!doctype HTML>
+<!doctype HTML class="w100 h100">
 <html language ="FR">
 
 	<head>
 		<title>Advanced Wars</title>
 		<meta charset= "UFT-8">
 		<link href="css/style_index.css" rel="stylesheet" >
+
+		<script src="java/paho-mqtt-min.js"></script>
+        <script type="module" src="java/iframebattlefx.js"></script>
+        <script type="module" src="java/script.js"></script>
 	</head>
 <!------------------------------------------------------------------------------->
-	<body>
+	<body class="w100 h100">
 		<!-- Menu du Haut -->
-		<div class="menuhaut">
+		<div class="menuhaut w100">
 			
 			<div class="map">
-				<img id="imgMap" src="images/map.png">
+				<img id="imgMap" src="img/map.png">
 			</div>
 
 			<h1 id="h1Name">Nom du joueur</h1>
@@ -20,16 +24,16 @@
 			<!--Menu Côté Droits-->
 			<div class="menu-droit">
 
-				<div class="life">
-					<img id="immLife" src="images/life.jpg">
+				<div class="life wAuto hAuto">
+					<img id="imgLife" src="img/life.jpg">
 				</div>
 
-				<div class="ammunition">
-					<img id="immAmmu" src="images/ammunition.jpg">
+				<div class="ammunition wAuto hAuto">
+					<img id="imgAmmu" src="img/ammunition.jpg">
 				</div>
 
-				<div class="indications">
-					<img id="immIndi" src="images/Indications.png">
+				<div class="indications wAuto hAuto">
+					<img id="imgIndi" src="img/Indications.png">
 				</div>
 
 			</div>
@@ -37,20 +41,21 @@
 		</div>
 		<!--Fin menu Haut-->
 
-		<div class="tank">
-			<img id="imaTank" src="images/Tank.png">
+		<div class="tank w100 h100">
+			<img id="imgTank" src="img/Tank.png">
 		</div>
 
 		<!--Menu Bas-->
-		<div class="menu-bas">
-
-			<div class="ma_Au">
-				<img id="immMaHu" src="images/ma_Au.jpg">
+		<div class="menu-bas w100">
+			
+			<div class="joysticks wAuto hAuto">
+				<img id="imgJoyst" src="img/joystick.jpg">
 			</div>
 
-			<div class="joysticks">
-				<img id="immJoyst" src="images/joystick.jpg">
+			<div class="ma_Au wAuto hAuto">
+				<img id="imgMaHu" src="img/ma_Au.jpg">
 			</div>
+
 
 		</div>
 		<!--Fin Menu Bas-->
