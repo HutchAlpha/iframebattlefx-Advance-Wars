@@ -14,7 +14,7 @@ console.log("Chargement iframebattlefx.js");
 */
 /**
  * @typedef 	{Object} 	Agent
- * @property 	{string}	id - The name of the agent
+ * @property 	{string}	id 			- The name of the agent
  * @property 	{number}	x			- Abscissa of the agent on the grid. From left (0) to right
  * @property 	{number}	y			- Ordinate of the agent on the grid. From top (0) to bottom
  * @property 	{number}	dir			- The orientation of the agent on the grid. 0: east, 1: north, 2:west, 3:south 
