@@ -4,16 +4,16 @@
 Définition : L'user Stories est une description simple d’un besoin ou d’une attente exprimée par un utilisateur.
 
 ### En tant que utilisateur, je veux :
-- créer un site web qui permettra de contrôler le robots soient de maniére auto ou mannuel ;
+- créer un site web Dynamique qui permettra de contrôler le robots soient de maniére auto ou mannuel ;
 - Adapter le site internet pour tout type d'écrants (PC - Mobille - Tablette);
 - Avoir la vue en mode supervision, et pas dans le mode arène;
 
-- L'utilisateur doit pouvoir sélectionner 2 modes de comportements (Automatique ou en mode Mannuel) : ;
+- L'utilisateur doit pouvoir sélectionner 2 modes de comportements (Automatique ou en mode Mannuel) :
 
 - - Mode Manuel : le robot ne fait que suivre les instructions données par des actions de
 l’utilisateur sur des inputs de la page ;
 - - Mode Automatique : le robot exécute un script sans besoin d’intervention de
-l’utilisateur;
+l’utilisateur.
 
 ### Personeae Administrateur :
 

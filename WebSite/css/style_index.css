@@ -1,12 +1,25 @@
 html, body{
-	background-color: rgb(105, 93, 93);
+	/*background-color: rgb(105, 93, 93);*/
+	margin: 0px;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content:space-between;
+	justify-content: space-between;
 }
+
+#ecrantjeux{
+display: flex;
+z-index: -1;
+height: 100%;
+width: 100%;
+
+}
+
 
 /*Menu Haut*/
 .menuhaut{
+	position: absolute;
 	display: flex ;
 	flex-direction:row;
 	justify-content: space-between;
@@ -21,20 +34,23 @@ html, body{
 }
 
 #imgMap{
-	width: 25%;
-	height: 25%;
+	width: 300px;
+	height: 300px;
 	display: flex;
 }
 
 /*Menu DROITS*/
 .menu-droit{
 	width: 20%;
-	height: 25%;
+	height: 25%;	
+	margin-top: 50px;	
+    margin-right: 10px;
+
+  
 	display: flex;
 	flex-direction:column;
 	justify-content: space-around;
 	align-items: flex-end;	
-	margin: 20px;
 }
 
 #imgLife{
@@ -48,7 +64,7 @@ html, body{
 }
 
 
-#imgIndi{
+#imgPlay{
 	display: flex;
 	justify-content: flex-end;	
 }
@@ -56,16 +72,26 @@ html, body{
 
 /*Fin Menu Haut*/
 
-.tank{
+.menu-mil{
 	
 	position: absolute;	
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
+}
+
+#imgTank{
+
+	height: 200px;
+	width: 250px;
+
 }
 
 /* Menu BAS */
 .menu-bas{
+	position: absolute;
+	top: 70%;
 	height: 25%;
 	display: flex;
 	flex-direction:row;
@@ -78,13 +104,15 @@ html, body{
 	position: absolute;
   bottom: 0;
   left: 0;
-  margin: 20px;
+  left: 10px;
+
 }
 
 #imgMaHu{
+	margin-left: 500px;
 	display: flex;
 	align-items: flex-end;	
-	margin: 20px;
+
 }
 
 
