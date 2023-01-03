@@ -55,12 +55,14 @@ width: 100%;
 
 #imgLife{
 	display: flex;
-	justify-content: flex-end;	
+	justify-content: flex-end;
+	padding-bottom: 5px;
 }
 
 #imgAmmu{
 	display: flex;
-	justify-content: flex-end;	
+	justify-content: flex-end;
+	padding-bottom: 5px;
 }
 
 
@@ -85,8 +87,9 @@ width: 100%;
 
 	height: 200px;
 	width: 250px;
-
 }
+
+
 
 /* Menu BAS */
 .menu-bas{
@@ -112,9 +115,13 @@ width: 100%;
 	margin-left: 500px;
 	display: flex;
 	align-items: flex-end;	
-
 }
+/*#imgMaHu:hover{
+	todo
+	border: 10px;
+	background-color: red;
 
+}*/
 
 /* Fin Menu Bas */
 
@@ -125,3 +132,17 @@ width: 100%;
 .wAuto{width: auto;}
 .hAuto{height: auto;}
 /*Fin de Factorisation de Code*/
+@media (max-width: 300px) , (max-height: 300px) {
+	/*Agrandir taille image en arrière plan en mode iframe*/
+	#imgTank{
+		width: 50vmin;
+		height: 50vmin;
+	}
+	/*Faire disparaitre joystick en mode iframe*/
+	.menu-bas,.menuhaut{
+		display: none;
+	}
+	#ecranjeux {
+		display: none;
+	}
+}
