@@ -8,11 +8,11 @@ html, body{
 	justify-content: space-between;
 }
 
-#ecrantjeux{
-display: flex;
-z-index: -1;
-height: 100%;
-width: 100%;
+#ecranjeux{
+	display: flex;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
 
 }
 
@@ -34,8 +34,8 @@ width: 100%;
 }
 
 #imgMap{
-	width: 300px;
-	height: 300px;
+	width: 100%;
+	height: 100%;
 	display: flex;
 }
 
@@ -102,22 +102,37 @@ width: 100%;
 }
 
 #imgJoyst{
+	width: 18%;
+	height: 100%;
 	align-items: flex-start;
 	display: flex;
 	position: absolute;
-  bottom: 0;
-  left: 0;
-  left: 10px;
-
+	bottom: 0;
+	left: 0;
+	left: 10px;
 }
 
+
 #imgMaHu{
+	
 	margin-left: 500px;
 	display: flex;
 	align-items: flex-end;	
+	transition: transform 0.5s;
+}
+
+
+#imgMaHu:hover {
+	background-color: red;
+	transition: background-color 0.5s;
+}
+  
+#imgCible{
+	flex: auto;
+	background-color: rgb(162, 40, 40);
+
 }
 /*#imgMaHu:hover{
-	todo
 	border: 10px;
 	background-color: red;
 
@@ -132,6 +147,19 @@ width: 100%;
 .wAuto{width: auto;}
 .hAuto{height: auto;}
 /*Fin de Factorisation de Code*/
+
+#vs{
+	background-color: white;
+	color: rgb(0, 0, 0);
+	font-family: verdana;
+	position: absolute;
+  	bottom: 0;
+  	right: 0;
+	border: 1px solid black;
+	padding: 5px 10px;
+	
+}
+
 @media (max-width: 300px) , (max-height: 300px) {
 	/*Agrandir taille image en arrière plan en mode iframe*/
 	#imgTank{
@@ -142,7 +170,21 @@ width: 100%;
 	.menu-bas,.menuhaut{
 		display: none;
 	}
-	#ecranjeux {
+	#ecranjeux,  #vs {
 		display: none;
 	}
 }
+
+
+/*Annimations Boutons */
+
+/*  .hAuto{
+	transition: all 0.5s;
+  }
+  
+  .hAuto:hover {
+	opacity: 0.9;
+	transform: scale(0.1);
+  }
+*/
+/*Fin Annimations Boutons */
