@@ -4,141 +4,174 @@ html, body{
 	width: 100%;
 	height: 100%;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    background-color: #4F4F4F;
 }
-
-#ecranjeux{
-	display: flex;
-	z-index: -1;
-	height: 100%;
-	width: 100%;
-
-}
-
 
 /*Menu Haut*/
-.menuhaut{
-	position: absolute;
-	display: flex ;
-	flex-direction:row;
-	justify-content: space-between;
-	height: 25%;
-}
+    .menuhaut{
+        position: absolute;
+        display: flex ;
+        flex-direction:row;
+        justify-content: space-between;
+        height: 30%;
+    }
 
-#h1Name{
-	height: 30px;
-	font-style:italic;
-	border: 2px solid rgb(0, 255, 81);
-	justify-content: center;
-}
+    #imgHaut{
+        display: flex;
+        position:relative;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+    }
 
-#imgMap{
-	width: 100%;
-	height: 100%;
-	display: flex;
-}
+        /*Menu HG*/
+        .HG{position: absolute;
+            top: 0;
+            left: 0;}
 
-/*Menu DROITS*/
-.menu-droit{
-	width: 20%;
-	height: 25%;	
-	margin-top: 50px;	
-    margin-right: 10px;
+            #imgMap{
+                width: 70%;
+                height: 70%;
+                margin-left: 60px;
+                margin-top: 10px;  
+            }
+        /*Fin Menu HG*/
 
-  
-	display: flex;
-	flex-direction:column;
-	justify-content: space-around;
-	align-items: flex-end;	
-}
+        /*Menu HC*/
+        .HC{position: absolute;
+            top: 0;
+            left: 47%;}
+        .H1{}
+            #h1Name{
+                height: 30px;
+                font-style:italic;
+                border: 2px solid rgb(185, 226, 20);
+                justify-content: center;
+        }
+        
+            #imgPlay{display: flex;}
 
-#imgLife{
-	display: flex;
-	justify-content: flex-end;
-	padding-bottom: 5px;
-}
+        /*Fin Menu HC*/
 
-#imgAmmu{
-	display: flex;
-	justify-content: flex-end;
-	padding-bottom: 5px;
-}
+        /*Menu HD*/
+            .HD{
+                position: absolute;
+                top: 10%;
+                left: 80%;
+            }
 
+            #imgLife{
+                background-color: red;
+                width: 250px;
+                display: flex;
+                padding-bottom: 5px;
+            }
 
-#imgPlay{
-	display: flex;
-	justify-content: flex-end;	
-}
-/*Fin Côté DROITS*/
+            #imgAmmu{
+                background-color: brown;
+                width: 250px;
+                margin-top: 20px;
+                display: flex;
+                padding-bottom: 5px;
+            }
+        /*Fin Menu HD*/
 
 /*Fin Menu Haut*/
 
-.menu-mil{
-	
+/*Menu Millieu*/
+.menu-mil{	
 	position: absolute;	
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 }
 
 #imgTank{
-
 	height: 200px;
 	width: 250px;
 }
-
-
+/*Fin Menu Millieu*/
 
 /* Menu BAS */
 .menu-bas{
-	position: absolute;
+    position: absolute;
+    display: flex ;
 	top: 70%;
-	height: 25%;
-	display: flex;
+	height: 30%;
 	flex-direction:row;
-	justify-content: space-evenly;	
+	justify-content: space-between;	
+}
+/*Menu BG*/
+
+.BG{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#connect_joyst{
 }
 
 #imgJoyst{
-	width: 18%;
-	height: 100%;
-	align-items: flex-start;
+    position: relative;
+    margin-left: 60px;
+	width: 100%;
+	height: auto;
 	display: flex;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	left: 10px;
 }
 
+/*Fin Menu BG*/
+
+/*Menu BC*/
+.BC{
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
 
 #imgMaHu{
-	
-	margin-left: 500px;
-	display: flex;
-	align-items: flex-end;	
+    padding-left: 100px;
+	display: flex;	
+	position:absolute;
 	transition: transform 0.5s;
 }
 
-
-#imgMaHu:hover {
-	background-color: red;
-	transition: background-color 0.5s;
+#vs{
+    width: 290px;
+    margin-left: 15px;
+    top: 150px;
+    position:relative;
+    display: flex;
+    background-color: white;
+    font-family: verdana;
+    border: 1px solid black;
 }
-  
+
+#imgVersion{
+    position: initial;
+    display: flex;    
+    margin-top: 80px;
+}
+/*Fin Menu BC*/
+
+/*Menu BD*/
+.BD{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    }
+
 #imgCible{
-	flex: auto;
+	display: flex;
 	background-color: rgb(162, 40, 40);
 
 }
-/*#imgMaHu:hover{
-	border: 10px;
-	background-color: red;
 
-}*/
+/*Fin Menu BD*/
 
 /* Fin Menu Bas */
+
+/*---------------------------*/
 
 /*Factoriser le Code*/
 .w100{width:100%;}
@@ -148,17 +181,6 @@ html, body{
 .hAuto{height: auto;}
 /*Fin de Factorisation de Code*/
 
-#vs{
-	background-color: white;
-	color: rgb(0, 0, 0);
-	font-family: verdana;
-	position: absolute;
-  	bottom: 0;
-  	right: 0;
-	border: 1px solid black;
-	padding: 5px 10px;
-	
-}
 
 @media (max-width: 300px) , (max-height: 300px) {
 	/*Agrandir taille image en arrière plan en mode iframe*/
@@ -170,7 +192,7 @@ html, body{
 	.menu-bas,.menuhaut{
 		display: none;
 	}
-	#ecranjeux,  #vs {
+	#ecranjeux,  #vs, #imgCible {
 		display: none;
 	}
 }
