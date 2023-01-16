@@ -1,59 +1,60 @@
 html, body{
 	/*background-color: rgb(105, 93, 93);*/
-	margin: 0px;
-	width: 100%;
-	height: 100%;
-	display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #4F4F4F;
 }
 
 /*Menu Haut*/
-    .menuhaut{
-        display: flex ;
-        height: 30%;
-        width: 100%;
-        justify-content: space-between;
-        
-    }
+.menuhaut{
+    display: flex ;
+    height: 30%;
+    width: 100%;
+    justify-content: space-between;
+/*Image paramétre*/
 
-    #imgHaut{
-        display: flex;
-        position:relative;
-        width: 100%;
-        left: 0px;
-        top: 0px;
-    }
+    background-image : url(../img/imgHM.png);
+    background-size: cover;
+    background-position: top;
+    
+}
+
 
         /*Menu HG*/
         .HG{
-            position: absolute;
-            top: 0;
-            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95%;
+            width: 35%;
+            background-color: rgb(206, 206, 206);
+            border-radius: 0px 0px 50px 0px;
         }
 
             #imgMap{
-                width: 70%;
-                height: 70%;
-                margin-left: 60px;
-                margin-top: 10px;  
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80%;
+                width: 100%;
+                background-color: rgb(206, 206, 206);
+                border-radius: 5px;
             }
+
+
         /*Fin Menu HG*/
 
         /*Menu HC*/
-        .HC{
-            position: absolute;
-            top: 0;
-            left: 47%;}
-        
             #h1Name{
-                display: flex;
                 height: 30px;
                 font-style:italic;
                 border: 2px solid rgb(185, 226, 20);
             }
-        
-            #imgPlay{display: flex;}
-
             /*Annimations Boutons */
             #imgPlay:active {transform: translateY(4px);}
             /*Fin Annimations Boutons */
@@ -62,16 +63,19 @@ html, body{
 
         /*Menu HD*/
             .HD{
-
-                position: absolute;
-                top: 5%;
-                left: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 95%;
+                width: 35%;
+                background-color: rgb(206, 206, 206);
+                border-radius: 0px 0px 0px 50px;
             }
 
             #imgLife{
+                display: flex;
                 background-color: red;
                 width: 250px;
-                display: flex;
                 padding-bottom: 5px;
             }
 
@@ -79,7 +83,6 @@ html, body{
                 background-color: brown;
                 width: 250px;
                 margin-top: 20px;
-                display: flex;
                 padding-bottom: 5px;
             }
         /*Fin Menu HD*/
@@ -87,8 +90,7 @@ html, body{
 /*Fin Menu Haut*/
 
 /*Menu Millieu*/
-    .menu-mil{	
-        position: absolute;	
+    .menu-mil{		
         display: flex;
         justify-content: center;
         align-items: center;
@@ -103,26 +105,28 @@ html, body{
 
 /* Menu BAS */
     .menu-bas{
-        position: absolute;
         display: flex ;
         top: 70%;
         height: 30%;
-        flex-direction:row;
         justify-content: space-between;	
     }
     /*Menu BG*/
 
         .BG{
-            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95%;
+            width: 35%;
             top: 0;
             left: 0;
         }
+        .cube{
+            width: 10px;
+            height: 10px;
+        }
 
         #imgJoyst{
-            position: relative;
-            margin-left: 60px;
-            width: 100%;
-            height: auto;
             display: flex;
         }
 
@@ -130,15 +134,14 @@ html, body{
 
         /*Menu BC*/
             .BC{
-                position: absolute;
-                top: 0;
-                left: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
 
             #imgMaHu{
-                padding-left: 100px;
-                display: flex;	
-                position:absolute;
+                display: flex;
+                padding-left: 100px;	
                 transition: transform 0.5s;
             }
             /*Annimations Boutons */
@@ -157,7 +160,6 @@ html, body{
             }
 
             #imgVersion{
-                position: initial;
                 display: flex;    
                 margin-top: 80px;
             }
@@ -165,13 +167,18 @@ html, body{
 
     /*Menu BD*/
         .BD{
-            position: absolute;
-            top: 10%;
-            left: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95%;
+            width: 35%;
+            position: flex;
             }
 
-        #imgCible{
+        .cible{
             display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: rgb(162, 40, 40);
 
         }
