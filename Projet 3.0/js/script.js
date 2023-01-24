@@ -2,6 +2,15 @@ console.log("Chargement script.js");
 var agent;
 var body;
 
+//Récolter son
+function onAgentLifeChanged(event) {
+	fetch("http://localhost:8080/getshoot");
+	if (life == 0) { fetch("http://localhost:8080/dead");
+}
+document.getElementById("myBtn").style.width = "100" + "%";
+
+}
+
 //Récolter Pseudo
 const url = new URL('http://adendevint2223.jusdeliens.com:8000/quentin_boisset');
 const pseudo = url.pathname.split('/')[1];
@@ -39,6 +48,7 @@ function onAgentDirChanged(event) {
 //Shoot Alumée
 function onFireButtonDown(event){
 	console.log("Mouse down, fire!!!");
+	fetch("http://localhost:8080/shoot");
 	agent.fire(true);
 }
 //Shoot Eteint
@@ -48,7 +58,7 @@ function onFireButtonUp(event){
 }
 
 function onPageLoaded(event) {
-	
+	fetch("http://localhost:8080/spawn");
 	//S'abonner aux cliques
 	let  fireButton = document.querySelector("#imgCible");
 	fireButton.addEventListener("mousedown",onFireButtonDown);
@@ -91,7 +101,8 @@ function onPageLoaded(event) {
 
   //Agent Changer direction
   agent.addEventListener("dirChanged", onAgentDirChanged);
-
+  //Vie change
+  agent.addEventListener("lifeChanged", onAgentLifeChanged);
   
 }
 

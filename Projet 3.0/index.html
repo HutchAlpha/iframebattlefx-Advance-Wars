@@ -12,7 +12,7 @@
 		<script src="js/paho-mqtt-min.js"></script>
 		<script src="js/iframebattlefx.js"></script>
 		<script src="js/animation.js"></script>
-		<script src="js/script.js"></script>
+		<script src="js/script.js" defer></script>
 		
 	</head>
 	<!------------------------------------------------------------------------------->
@@ -40,9 +40,15 @@
             <!-- Menu HD -->
             <div class="HD">
 
-                <div class="life ">
-                    <img id="imgLife" src="img/life.png">
-                    <img id="imgAmmu" src="img/ammunition.png">
+                <div class="Bar">
+                    <div id="life">
+                        <img id="imgLife" src="img/life.png">
+                        <div id="lifeColors"></div>
+                    </div>
+                    <div id="ammu">
+                        <img id="imgAmmu" src="img/ammunition.png">
+                        <div id="ammuColors"></div>
+                    </div>
                 </div>
 
             </div>
@@ -64,9 +70,9 @@
             <!--Menu BG -->
             <div class="BG">
 
-                <img id="connect_joyst" src="img/connect_joyst.png">
-
+                
                 <div class="joysticks wAuto hAuto">
+                    <img id="connect_joyst" src="img/connect_joyst.png">
                     <img id="imgJoyst" src="img/joystick.png">
                 </div>
 

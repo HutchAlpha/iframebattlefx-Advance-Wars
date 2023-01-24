@@ -51,12 +51,16 @@ html, body{
 
         /*Menu HC*/
             #h1Name{
-                height: 30px;
+                height: 35px;
                 font-style:italic;
                 border: 2px solid rgb(185, 226, 20);
             }
+            #imgPlay{
+                display: flex;
+                margin-left: 50px;}
+
             /*Annimations Boutons */
-            #imgPlay:active {transform: translateY(4px);}
+                #imgPlay:active {transform: translateY(4px);}
             /*Fin Annimations Boutons */
 
         /*Fin Menu HC*/
@@ -74,16 +78,27 @@ html, body{
 
             #imgLife{
                 display: flex;
-                background-color: red;
-                width: 250px;
                 padding-bottom: 5px;
             }
+            #life{
+                width: 30vmin;
+            }
+            #lifeColors{
+                background-color: red;
+                width: 100%;
+            }
+
 
             #imgAmmu{
-                background-color: brown;
-                width: 250px;
                 margin-top: 20px;
                 padding-bottom: 5px;
+            }
+            #ammu{
+                width: 30vmin;
+            }
+            #ammuColors{
+                background-color: rgb(66, 18, 211);
+                width: 100%;
             }
         /*Fin Menu HD*/
 
@@ -175,7 +190,13 @@ html, body{
             position: flex;
             }
 
-        .cible{
+        #connect_joyst{    
+            position: relative;
+            top: 125px;
+            left: 90px;
+            }
+
+        #cible{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -203,7 +224,10 @@ html, body{
 
 @media (max-width: 300px) , (max-height: 300px) {
 	/*Agrandir taille image en arrière plan en mode iframe*/
-	#imgTank{
+	html, body{
+        background-color: transparent;
+    }
+    #imgTank{
 		width: 50vmin;
 		height: 50vmin;
 	}
