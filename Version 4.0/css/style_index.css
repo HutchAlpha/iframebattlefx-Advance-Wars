@@ -1,0 +1,258 @@
+html, body{
+	/*background-color: rgb(105, 93, 93);*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #4F4F4F;
+}
+
+/*!Menu Haut*/
+.menuhaut{
+    display: flex ;
+    height: 30%;
+    width: 100%;
+    justify-content: space-between;
+/*Image paramétre*/
+
+    background-image : url(../img/imgHM.png);
+    background-size: cover;
+    background-position: top;
+    
+}
+
+
+        /**Menu HG*/
+        .HG{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95%;
+            width: 35%;
+            background-color: rgb(206, 206, 206);
+            border-radius: 0px 0px 50px 0px;
+        }
+
+            #imgMap{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80%;
+                width: 100%;
+                background-color: rgb(206, 206, 206);
+                border-radius: 5px;
+            }
+
+
+        /**Fin Menu HG*/
+
+        /**Menu HC*/
+            #h1Name{
+                height: 20%;
+                font-style:italic;
+                border: 2px solid rgb(185, 226, 20);
+            }
+            #imgPlay{
+                display: flex;
+                margin-left: 25%;}
+
+            /*Annimations Boutons */
+                #imgPlay:active {transform: translateY(4px);}
+            /*Fin Annimations Boutons */
+
+        /**Fin Menu HC*/
+
+        /**Menu HD*/
+        .HD{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95%;
+            width: 35%;
+            background-color: rgb(206, 206, 206);
+            border-radius: 0px 0px 0px 50px;
+        }
+        /*Couleur Vie*/
+        #imgLife{
+            z-index: 4;
+            position: absolute;
+            background-image : url(../img/life.png);
+            
+            display: flex;
+            background-size: cover;
+            width: 250px;
+            height: 50px;
+            padding-bottom: 5px;
+        }
+        #lifeColors{
+            z-index: 2;
+            position: relative;
+            background-color: red;
+            width: 250px;
+            height: 50px;
+        }
+        
+       /*Couleur Munnitions*/
+        #imgAmmu{
+            z-index: 4;
+            position: absolute;
+            background-image: url(../img/ammunition.png);
+            display: flex;
+            background-size: cover;
+            width: 250px;
+            height: 50px;
+            padding-bottom: 5px;
+        }
+        #ammuColors{
+            top: 10px;
+            z-index: 2;
+            position: relative;
+            background-color: rgb(66, 18, 211);
+            width: 250px;
+            height: 50px
+        }
+
+    /**Fin Menu HD*/
+
+/*!Fin Menu Haut*/
+
+/*!Menu Millieu*/
+    .menu-mil{		
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #imgTank{
+        display: flex;
+        height: 300px;
+        width: 300px;
+    }
+/*!Fin Menu Millieu*/
+
+/*!Menu BAS */
+    .menu-bas{
+        display: flex ;
+        top: 70%;
+        height: 30%;
+        justify-content: space-between;	
+    }
+    /**Menu BG*/
+
+        .BG{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95%;
+            width: 35%;
+            top: 0;
+            left: 0;
+        }
+        .cube{
+            width: 10%;
+            height: 10%;
+        }
+
+        #imgJoyst{
+            display: flex;
+        }
+
+    /**Fin Menu BG*/
+
+        /**menu BC*/
+            .BC{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            #imgMaHu{
+                display: flex;
+                padding-left: 32%;	
+                transition: transform 0.5s;
+            }
+            /*Annimations Boutons */
+             #imgMaHu:active {transform: translateY(18px);}
+            /*Fin Annimations Boutons */
+
+            #vs{
+                width: 80%;
+                margin-left: 30px;
+                top: 65%;
+                position:relative;
+                display: flex;
+                background-color: white;
+                font-family: verdana;
+                border: 1px solid black;
+            }
+
+            #imgVersion{
+                display: flex;    
+                margin-top: 10%;
+            }
+        /**Fin Menu BC*/
+
+    /**Menu BD*/
+        .BD{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 35%;
+            position: flex;
+            }
+
+        #connect_joyst{    
+            position: relative;
+            top: 125px;
+            left: 90px;
+            }
+
+        #cible{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(162, 40, 40);
+
+        }
+        /*Annimations Boutons */
+        #imgCible:active {transform: translateY(4px);}
+        /*Fin Annimations Boutons */
+
+    /**Fin Menu BD*/
+
+/*!Fin Menu Bas */
+
+/*---------------------------*/
+
+/*!Factoriser le Code*/
+.w100{width:100%;}
+.h100{height: 100%;}
+
+.wAuto{width: auto;}
+.hAuto{height: auto;}
+/*!Fin de Factorisation de Code*/
+
+
+@media (max-width: 300px) , (max-height: 300px) {
+	/*Agrandir taille image en arrière plan en mode iframe*/
+	html, body{
+        background-color: transparent;
+    }
+    #imgTank{
+		width: 50vmin;
+		height: 50vmin;
+	}
+	/*Faire disparaitre joystick en mode iframe*/
+	.menu-bas,.menuhaut{
+		display: none;
+	}
+	#ecranjeux,  #vs, #imgCible {
+		display: none;
+	}
+}
+
+

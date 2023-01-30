@@ -1,0 +1,109 @@
+<!DOCTYPE HTML class="w100 h100">
+<html language ="FR">
+
+	<head>
+		<title>Advanced Wars</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="css/style_index.css" rel="stylesheet" >
+
+		<script src="js/paho-mqtt-min.js"></script>
+		<script src="js/iframebattlefx.js"></script>
+		<script src="js/animation.js"></script>
+		<script src="js/script.js" defer></script>
+		
+	</head>
+	<!------------------------------------------------------------------------------->
+	<body class="w100 h100">
+
+    <!-- Menu Haut -->
+        <div class="menuhaut ">
+
+            <!-- Menu HG -->
+            <div class="HG">
+                <div class="map"><img id="imgMap" src="img/map.png">
+                    </div>
+            </div>
+            <!-- Fin Menu HG -->
+
+                <!-- Menu HC -->
+                <div class="HC"> 
+                    <div class="h1">
+                        <h1 id="h1Name">Pseudo</h1>
+                        <img id="imgPlay" src="img/play.png">
+                    </div>
+                </div>
+                <!-- FinMenu HC -->
+
+            <!-- Menu HD -->
+            <div class="HD">
+
+                <div class="Bar">
+                    <div id="lifeColors">
+                        <div id="imgLife"></div>
+                    </div>
+                    <div id="ammuColors">
+                        <div id="imgAmmu"></div>
+                    </div>
+                </div>
+                
+                    
+            </div>
+            <!-- Fin Menu HD -->
+        </div>
+    <!--Fin Menu Haut-->
+
+    <!-- menu milieu-->
+        <div class="menu-mil w100 h100">
+            <img id="imgTank" src="img/Tank.png">
+            <div id="cube"></div>
+        </div>
+	<!-- Fin menu milieu-->
+
+    <!--Menu Bas-->
+    <div class="menu-bas">
+        
+        <!--Menu BG -->
+        <div class="BG">
+
+            
+            <div class="joysticks wAuto hAuto">
+                <img id="connect_joyst" src="img/connect_joyst.png">
+                <img id="imgJoyst" src="img/joystick.png">
+            </div>
+
+        </div>
+        <!--Fin Menu BG -->
+        
+            <!--Menu BC -->
+            <div class="BC">
+                <div class="ma_Au wAuto hAuto">
+                    <img id="imgMaHu" src="img/ma_Au.png">
+                </div>
+                    
+                <div class="imgVersion">
+                    <h1 id="vs">Version 4.0</h1>
+                    <img id="imgVersion" src="img/version.png">
+                </div>
+
+            </div>
+            <!--Fin Menu BC -->
+
+        <!--Menu BD -->
+        <div class="BD">
+            <div class="cible">
+                <img id="imgCible" src="img/cible.png">
+            </div>
+        </div>
+        <!--Fin Menu BD -->
+
+    </div>
+    <!--Fin Menu Bas-->
+
+
+
+
+    </body>
+</html>
