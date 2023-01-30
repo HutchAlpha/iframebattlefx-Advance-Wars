@@ -1,0 +1,34 @@
+/*Couleurs extérieur*/
+#pwidget
+{
+  background-color:lightgray;
+  width:254px;
+  padding:2px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  text-align:left;
+  border:1px solid gray;	
+}
+/*Barre de chargements*/
+#progressbar
+{
+  width:250px;
+  padding:1px;
+  background-color:white;
+  border:1px solid black;
+  height:28px;
+}
+/*Annimation de charements*/
+#indication
+{
+  width:0px;
+  background-color: red;
+  height:28px;
+  margin:0;
+}
+/*Numéros en dessous de la barre de chargements*/
+#progressnum
+{
+  text-align:center;
+  width:250px;
+}

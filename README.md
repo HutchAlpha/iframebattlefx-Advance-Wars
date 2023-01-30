@@ -29,3 +29,5 @@ munitions, sa position, ses ennemis autour de lui…;
 Vous pourez retrouvez l'avancements du projet sur le Trello : https://trello.com/b/4AAijPFo/iframebattlex-quentin-boisset-advance-wars ;
 
 Pour voir le modéle graphique de la page web, vous pouvez regarder le projet sur figma : https://www.figma.com/file/Fptpks2GM60yrwBlsZX4li/IFrameBattleX-Quentin-BOISSET-Advance-Wars?node-id=0%3A1&t=3FoYYZAXHVAhSg16-0 ;
+
+Pour activer la musique, activer ce liens : https://jusdeliens.com/play/pyiotx-viewer/ 

@@ -10,7 +10,7 @@ html, body{
     background-color: #4F4F4F;
 }
 
-/*Menu Haut*/
+/*!Menu Haut*/
 .menuhaut{
     display: flex ;
     height: 30%;
@@ -25,7 +25,7 @@ html, body{
 }
 
 
-        /*Menu HG*/
+        /**Menu HG*/
         .HG{
             display: flex;
             justify-content: center;
@@ -47,9 +47,9 @@ html, body{
             }
 
 
-        /*Fin Menu HG*/
+        /**Fin Menu HG*/
 
-        /*Menu HC*/
+        /**Menu HC*/
             #h1Name{
                 height: 35px;
                 font-style:italic;
@@ -63,9 +63,9 @@ html, body{
                 #imgPlay:active {transform: translateY(4px);}
             /*Fin Annimations Boutons */
 
-        /*Fin Menu HC*/
+        /**Fin Menu HC*/
 
-        /*Menu HD*/
+        /**Menu HD*/
             .HD{
                 display: flex;
                 justify-content: center;
@@ -75,57 +75,72 @@ html, body{
                 background-color: rgb(206, 206, 206);
                 border-radius: 0px 0px 0px 50px;
             }
-
+            /*Couleur Vie*/
             #imgLife{
+                z-index: 4;
+                position: absolute;
+                background-image : url(../img/life.png);
+                
                 display: flex;
+                background-size: cover;
+                width: 250px;
+                height: 50px;
                 padding-bottom: 5px;
-            }
-            #life{
-                width: 30vmin;
             }
             #lifeColors{
+                z-index: 2;
+                position: relative;
                 background-color: red;
-                width: 100%;
+                width: 250px;
+                height: 50px;
             }
-
-
+            
+           /*Couleur Munnitions*/
             #imgAmmu{
-                margin-top: 20px;
+                z-index: 4;
+                position: absolute;
+                background-image: url(../img/ammunition.png);
+                display: flex;
+                background-size: cover;
+                width: 250px;
+                height: 50px;
                 padding-bottom: 5px;
             }
-            #ammu{
-                width: 30vmin;
-            }
             #ammuColors{
+                top: 10px;
+                z-index: 2;
+                position: relative;
                 background-color: rgb(66, 18, 211);
-                width: 100%;
+                width: 250px;
+                height: 50px
             }
-        /*Fin Menu HD*/
+ 
+        /**Fin Menu HD*/
 
-/*Fin Menu Haut*/
+/*!Fin Menu Haut*/
 
-/*Menu Millieu*/
+/*!Menu Millieu*/
     .menu-mil{		
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
+    
     #imgTank{
         display: flex;
         height: 200px;
         width: 250px;
     }
-/*Fin Menu Millieu*/
+/*!Fin Menu Millieu*/
 
-/* Menu BAS */
+/*!Menu BAS */
     .menu-bas{
         display: flex ;
         top: 70%;
         height: 30%;
         justify-content: space-between;	
     }
-    /*Menu BG*/
+    /**Menu BG*/
 
         .BG{
             display: flex;
@@ -145,9 +160,9 @@ html, body{
             display: flex;
         }
 
-    /*Fin Menu BG*/
+    /**Fin Menu BG*/
 
-        /*Menu BC*/
+        /**menu BC*/
             .BC{
                 display: flex;
                 flex-direction: column;
@@ -178,9 +193,9 @@ html, body{
                 display: flex;    
                 margin-top: 80px;
             }
-        /*Fin Menu BC*/
+        /**Fin Menu BC*/
 
-    /*Menu BD*/
+    /**Menu BD*/
         .BD{
             display: flex;
             justify-content: center;
@@ -207,19 +222,19 @@ html, body{
         #imgCible:active {transform: translateY(4px);}
         /*Fin Annimations Boutons */
 
-    /*Fin Menu BD*/
+    /**Fin Menu BD*/
 
-/* Fin Menu Bas */
+/*!Fin Menu Bas */
 
 /*---------------------------*/
 
-/*Factoriser le Code*/
+/*!Factoriser le Code*/
 .w100{width:100%;}
 .h100{height: 100%;}
 
 .wAuto{width: auto;}
 .hAuto{height: auto;}
-/*Fin de Factorisation de Code*/
+/*!Fin de Factorisation de Code*/
 
 
 @media (max-width: 300px) , (max-height: 300px) {

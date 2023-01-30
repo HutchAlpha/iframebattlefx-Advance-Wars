@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style_css.css" rel="stylesheet" >
+    <script src="style_js.js"></script>
+    
+    <title>Barre de Chargements</title>
+</head>
+<body>
+    <div id="pwidget">  
+        <div id="progressbar">
+            <div id="indication"></div>
+        </div>
+        <div id="progressnum">0</div>
+        </div>
+        <input type="button" name="Submit" value="Lancer la progression"
+            onclick="itv = setInterval(prog, 100)" />
+        <input type="button" name="Submit" value="Stopper"
+            onclick="clearInterval(itv)" />
+    
+</body>
+</html>
