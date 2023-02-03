@@ -25,6 +25,26 @@ l’utilisateur.
 - L’affichage varie selon votre thème et son état en temps réel : sa vie, ses
 munitions, sa position, ses ennemis autour de lui…;
 
+### Diagramme Mermaid :
+```mermaid
+sequenceDiagram
+    Client->>+Apache: http://adendevint2223.jusdeliens.com:8000/quentin_boisset 
+    Apache->>-Client:GET : index.html
+    Client->>+Apache:http://adendevint2223.jusdeliens.com:8000/quentin_boisset 
+    Apache->>-Client:GET : Style.css
+    Client->>+Apache:http://adendevint2223.jusdeliens.com:8000/quentin_boisset 
+    Apache->>-Client:GET : Script.js
+    Client->>+Navigateur:Demare processus Script.js
+    Client->>+Apache:http://adendevint2223.jusdeliens.com:8000/quentin_boisset 
+    Apache->>-Client:GET : .....
+    Client->>+MQTT JusdeLiens:Demare processus MQTT Jus de Liens + démarrage boucle 
+    Client->>+MQTT JusdeLiens: créer Objet Robots
+    MQTT JusdeLiens->>-Client: Robots connecté
+    Client->>+MQTT JusdeLiens: Copier l'URL name
+    MQTT JusdeLiens->>-Client: Le robots prend son noms
+    Client->>+MQTT JusdeLiens: Clique pour Tirer
+    MQTT JusdeLiens->>-Client: Robots tire
+```  
 ### Informations complémentaires :
 Vous pourez retrouvez l'avancements du projet sur le Trello : https://trello.com/b/4AAijPFo/iframebattlex-quentin-boisset-advance-wars ;
 
